@@ -47,8 +47,7 @@
 修改内容:
 更换了一个来自armbian(5.15.y)官方提供的dts，修改后编译得到的dtb。
 修改了`systemd-modules-load.service`这一服务的超时时间为`5s`，如果第一次启动不正常改到`10s`，之后的启动一般而言`5s`是能够正常启动的，如果不改启动会在这里卡`90s`。
-
-###通过apt更新系统后需要重新添加`timeoutstart`项目为`5s`，如果在更新时没有选择更新文件则忽略此条。
+### 通过apt更新系统后需要重新添加`timeoutstart`项目为`5s`，如果在更新时没有选择更新文件则忽略此条。
 
 - manjaro系统只能使用[balenaEtcher](https://etcher.balena.io/#download-etcher "balenaEtcher")刷入SD卡启动(在emmc存在上面的ubuntu系统时是可以启动的，别的未测试)。
 
